@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html class="light" lang="es" style="">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Fogysa Mascotas | ¡Únete a la Fogy Familia!</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&amp;family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "primary-fixed-dim": "#4edea3",
+                        "surface-variant": "#d3e4fe",
+                        "outline-variant": "#bbcabf",
+                        "inverse-surface": "#213145",
+                        "on-secondary-fixed-variant": "#22496c",
+                        "on-primary": "#ffffff",
+                        "tertiary-container": "#60a5fa",
+                        "on-secondary": "#ffffff",
+                        "surface-container-highest": "#d3e4fe",
+                        "on-tertiary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "error": "#ba1a1a",
+                        "bark-charcoal": "#1E293B",
+                        "on-secondary-fixed": "#001d34",
+                        "outline": "#6c7a71",
+                        "on-secondary-container": "#375c81",
+                        "surface-dim": "#cbdbf5",
+                        "secondary": "#003764",
+                        "on-primary-fixed": "#002113",
+                        "surface-container": "#e5eeff",
+                        "primary": "#009c42",
+                        "inverse-primary": "#4edea3",
+                        "secondary-fixed-dim": "#a5caf4",
+                        "surface": "#f8f9ff",
+                        "on-error-container": "#93000a",
+                        "secondary-fixed": "#d0e4ff",
+                        "on-surface-variant": "#3c4a42",
+                        "trust-blue-light": "#E0F2FE",
+                        "on-primary-fixed-variant": "#005236",
+                        "primary-container": "#10b981",
+                        "vitality-green": "#DCFCE7",
+                        "surface-container-high": "#dce9ff",
+                        "on-tertiary-fixed-variant": "#004883",
+                        "fogysa-green": "#009c42",
+                        "on-tertiary-fixed": "#001c39",
+                        "on-tertiary-container": "#003a6b",
+                        "on-error": "#ffffff",
+                        "surface-bright": "#f8f9ff",
+                        "on-background": "#0b1c30",
+                        "on-surface": "#0b1c30",
+                        "surface-container-low": "#eff4ff",
+                        "tertiary": "#01525b",
+                        "on-primary-container": "#00422b",
+                        "surface-tint": "#009c42",
+                        "surface-container-lowest": "#ffffff",
+                        "tertiary-fixed-dim": "#a4c9ff",
+                        "tertiary-fixed": "#d4e3ff",
+                        "primary-fixed": "#6ffbbe",
+                        "background": "#f8f9ff",
+                        "inverse-on-surface": "#eaf1ff",
+                        "secondary-container": "#b0d5ff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "base": "8px",
+                        "margin-desktop": "48px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Gotham", "Montserrat", "sans-serif"],
+                        "display-lg-mobile": ["Gotham", "Montserrat", "sans-serif"],
+                        "headline-md": ["Gotham", "Montserrat", "sans-serif"],
+                        "headline-sm": ["Gotham", "Montserrat", "sans-serif"],
+                        "display-lg": ["Gotham", "Montserrat", "sans-serif"],
+                        "body-md": ["Gotham", "Montserrat", "sans-serif"],
+                        "body-lg": ["Gotham", "Montserrat", "sans-serif"],
+                        "label-md": ["Gotham", "Montserrat", "sans-serif"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["12px", { "lineHeight": "1.2", "fontWeight": "500" }],
+                        "display-lg-mobile": ["36px", { "lineHeight": "1.2", "fontWeight": "800" }],
+                        "headline-md": ["32px", { "lineHeight": "1.3", "fontWeight": "700" }],
+                        "headline-sm": ["24px", { "lineHeight": "1.4", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "800" }],
+                        "body-md": ["16px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "label-md": ["14px", { "lineHeight": "1.2", "letterSpacing": "0.01em", "fontWeight": "600" }]
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        .organic-shape {
+            border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0px);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+
+            100% {
+                transform: translateY(0px);
+            }
+        }
+
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+
+<body class="bg-background font-body-md text-on-surface antialiased overflow-x-hidden">
+    <!-- TopNavBar -->
+    <header
+        class="bg-surface/80 dark:bg-inverse-surface/80 backdrop-blur-md shadow-[0_10px_30px_-10px_rgba(0,49,83,0.08)] docked full-width top-0 sticky z-50">
+        <nav
+            class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 max-w-container-max mx-auto">
+            <a href="#" class="flex items-center gap-2">
+                <img src="logo.png" alt="Fogysa Mascotas Logo" class="h-12 w-auto object-contain">
+            </a>
+
+            <a href="https://www.facebook.com/share/1CWzu3UmhG/?mibextid=wwXIfr" target="_blank"
+                rel="noopener noreferrer"
+                class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-md text-label-md hover:bg-secondary hover:shadow-lg hover:shadow-primary/20 hover:-translate-y-0.5 active:scale-95 transition-all duration-300 shadow-sm inline-block text-center">
+                Síguenos
+            </a>
+        </nav>
+    </header>
+    <main>
+        <!-- Social Grid Section -->
+        <section class="bg-surface-container-low relative pt-16 pb-12" id="social-grid">
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop">
+                <div class="flex justify-center -mb-8">
+                    <div class="relative w-full max-w-xs animate-float">
+                        <img alt="Fogysa Mascotas Mascot" class="w-full h-auto"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuCXi7Dqoc_bLqBmzyaWAUNP0VFbiZCwMV-A20rbBf0F48SvGzGuetCGiZoLtZZd83azpSOAPyBB1Mc7FXqjXj4TCuVKYwOzzT7IUIBONDQhRPu4nkXF-PZ7p1-o1ziXySytSjZ8GRgygzIzXTncUAV8MCRDIALjXzncTlcxBB-2RewkDUSRQxcaVJMIYoNB0ZdDxVeI9okI17qP31kvO0Nybps-fywbB6Qlx1SEga-OawjsVr6X5RIw4f2Cf_sVepYdpODq-PWQNNU">
+                        <!-- Subtle Shadow Glow -->
+                        <div
+                            class="absolute -bottom-6 left-1/2 -translate-x-1/2 w-4/5 h-4 bg-bark-charcoal/10 blur-xl rounded-full">
+                        </div>
+                        <!-- Decorative Mascot Bubble -->
+                        <div
+                            class="absolute -top-4 -right-4 glass-card p-3 rounded-xl shadow-lg border border-white/40 hidden sm:block">
+                            <div class="flex items-center gap-2">
+                                <span class="material-symbols-outlined text-primary text-sm" data-icon="pets">pets</span>
+                                <span class="font-label-md text-xs text-secondary">¡Bienvenidos!</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center space-y-4 mb-8">
+                    <h2 class="font-headline-md text-headline-md text-on-background">¡Únete a la Fogy Familia!</h2>
+                    <p class="font-body-md text-body-md text-on-surface-variant max-w-2xl mx-auto">
+                        Llena tu día de colitas felices, consejos expertos y todo el amor que tu mascota merece. ¡Elige tu red favorita y conéctate con la Fogy Familia!
+                    </p>
+                </div>
+                <!-- Mascot pointing -->
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- Instagram Card -->
+                    <div
+                        class="group relative bg-white p-8 rounded-xl shadow-[0_10px_30px_-10px_rgba(0,49,83,0.08)] hover:-translate-y-2 transition-all duration-300 border border-outline/5 overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-[#833ab4] via-[#fd1d1d] to-[#fcb045] opacity-5 -translate-y-16 translate-x-16 rounded-full group-hover:scale-150 transition-transform duration-500">
+                        </div>
+                        <div class="relative z-10 flex flex-col items-center text-center justify-center h-full">
+                            <div class="w-16 h-16 mb-6">
+                                <img src="insta.svg" alt="Instagram" class="w-full h-full object-contain">
+                            </div>
+                            <a class="w-full py-3 px-6 rounded-full border-2 border-[#fd1d1d] text-[#fd1d1d] font-label-md text-label-md text-center hover:bg-gradient-to-br hover:from-[#833ab4] hover:via-[#fd1d1d] hover:to-[#fcb045] hover:text-white hover:border-transparent transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#fd1d1d]/30"
+                                href="https://www.instagram.com/fogysadivisionmascota?igsh=MW9ydm9qNTMxMzZ4aA==">
+                                Síguenos en Instagram
+                            </a>
+                        </div>
+                    </div>
+                    <!-- Facebook Card -->
+                    <div
+                        class="group relative bg-white p-8 rounded-xl shadow-[0_10px_30px_-10px_rgba(0,49,83,0.08)] hover:-translate-y-2 transition-all duration-300 border border-outline/5 overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-[#1877F2] opacity-5 -translate-y-16 translate-x-16 rounded-full group-hover:scale-150 transition-transform duration-500">
+                        </div>
+                        <div class="relative z-10 flex flex-col items-center text-center justify-center h-full">
+                            <div class="w-16 h-16 mb-6">
+                                <img src="face.svg" alt="Facebook" class="w-full h-full object-contain">
+                            </div>
+                            <a class="w-full py-3 px-6 rounded-full border-2 border-[#1877F2] text-[#1877F2] font-label-md text-label-md text-center hover:bg-[#1877F2] hover:text-white hover:border-transparent transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-[#1877F2]/30"
+                                href="https://www.facebook.com/share/1CWzu3UmhG/?mibextid=wwXIfr">
+                                Síguenos en Facebook
+                            </a>
+                        </div>
+                    </div>
+                    <!-- TikTok Card -->
+                    <div
+                        class="group relative bg-white p-8 rounded-xl shadow-[0_10px_30px_-10px_rgba(0,49,83,0.08)] hover:-translate-y-2 transition-all duration-300 border border-outline/5 overflow-hidden">
+                        <div
+                            class="absolute top-0 right-0 w-32 h-32 bg-[#000000] opacity-5 -translate-y-16 translate-x-16 rounded-full group-hover:scale-150 transition-transform duration-500">
+                        </div>
+                        <div class="relative z-10 flex flex-col items-center text-center justify-center h-full">
+                            <div class="w-16 h-16 mb-6">
+                                <img src="tiktok.svg" alt="TikTok" class="w-full h-full object-contain">
+                            </div>
+                            <a class="w-full py-3 px-6 rounded-full border-2 border-black text-black font-label-md text-label-md text-center hover:bg-black hover:text-white hover:border-transparent transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-black/30"
+                                href="https://www.tiktok.com/@fogysa.mascotas?_r=1&_t=ZS-96t1w4SmZNt">
+                                Síguenos en TikTok
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Newsletter / Community Section -->
+
+    </main>
+
+    <!-- Image Prompts (Embedded in HTML for the system) -->
+    <div class="hidden">
+        <img data-alt="A cute, friendly cartoon blue and white puppy mascot wearing a green veterinary lab coat and a stethoscope. The puppy has large expressive eyes, floppy blue ears, and a joyful smile. The style is modern 2D digital illustration with clean lines and vibrant colors, set against a professional yet approachable healthcare background for pets."
+            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBX9XSBqNA5IoMuA3OknWILf4rWeVToqskNFG9WMytVLHi-30sQ5h-9OWhr6oroChY0mNe3_VET_zYj0uADU8-3Rir_qIYEPAxhwKKAHv7wdIrL5ZT5ONVR7-yCFdkCdFyITM6FBtJl6nVkV-tHbQ0gu7cC-5Jfhs6yA917QTistNrCoQVZI3cf7QtmsYHn2jMmNJHKATbPnNM3L8IP17NeSy2ffjLC87Y6RYb19YC69kTSCXeNgS5F2csw2NSOpeQZt5UdDiF5xJ4">
+    </div>
+
+
+
+</body>
+
+</html>
